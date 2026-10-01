@@ -17,7 +17,7 @@ int main() {
 
     for (int i=0; i<3; i++){
         for (int j=0; j<3; j++){
-            cout<<"Ingrese el valor de la posición [" << i << "][" << j << "]: ";
+            cout<<"Ingrese el valor de la posiciÃ³n [" << i << "][" << j << "]: ";
             cin>> matriz[i][j];
         }
     }
@@ -100,7 +100,7 @@ int main() {
 
 
 
-    //determinar simetría
+    //determinar simetrï¿½a
 
 
     bool simetrica = true;
@@ -113,13 +113,13 @@ int main() {
         }
     }
 
-    cout<<"La matriz es simétrica? "<<endl;
+    cout<<"La matriz es simï¿½trica? "<<endl;
 
     if (simetrica == true){
-        cout<<"Sí es simétrica." << endl;
+        cout<<"Sï¿½ es simï¿½trica." << endl;
     }
     else{
-        cout<<"No es simétrica." << endl;
+        cout<<"No es simï¿½trica." << endl;
     }
 
     //transpuesta de la matriz
@@ -136,22 +136,22 @@ int main() {
     }
 
 
-    //buscar un número en la matriz
+    //buscar un nï¿½mero en la matriz
 
-    cout<<"Ingrese el número que desea buscar: ";
+    cout<<"Ingrese el nï¿½mero que desea buscar: ";
     cin>> buscar;
 
     for (int i=0; i<3; i++){
         for (int j=0; j<3; j++){
             if (matriz[i][j] == buscar){
-                cout<<"El número " << buscar << " se encuentra en la fila " << i + 1 << " y columna " << j + 1 << endl;
+                cout<<"El nï¿½mero " << buscar << " se encuentra en la fila " << i + 1 << " y columna " << j + 1 << endl;
                 encontrado = true;
             }
         }
     }
 
     if (encontrado == false){
-        cout<<"El número " << buscar << " no se encuentra en la matriz." << endl;
+        cout<<"El nï¿½mero " << buscar << " no se encuentra en la matriz." << endl;
     }
 
 
