@@ -19,11 +19,11 @@ int main() {
     double promedio = 0;
 
     for (int i = 0; i<10; i++){
-        cout<< "Ingrese el número " << i + 1 << ": ";
+        cout<< "Ingrese el nÃºmero " << i + 1 << ": ";
         cin >> numero[i];
     }
 
-    cout<< "Los números en orden inverso son: "<<endl;
+    cout<< "Los nÃºmeros en orden inverso son: "<<endl;
 
 
     for (int i=9; i>=0; i--){
@@ -48,8 +48,8 @@ int main() {
     }
 
 
-    cout<<"Los números positivos son: " << positivos << endl;
-    cout<<"Los números negativos son: " << negativos << endl;
+    cout<<"Los nÃºmeros positivos son: " << positivos << endl;
+    cout<<"Los nÃºmeros negativos son: " << negativos << endl;
     cout<<"Los ceros: " << ceros << endl;
 
 
@@ -67,8 +67,8 @@ int main() {
         }
     }
 
-    cout<<"El número mayor es: " << mayor << endl;
-    cout<<"El número menor es: " << menor << endl;
+    cout<<"El nÃºmero mayor es: " << mayor << endl;
+    cout<<"El nÃºmero menor es: " << menor << endl;
 
 
     //suma y promedio
@@ -79,13 +79,13 @@ int main() {
 
     promedio = (double)suma / 10;
 
-    cout<<"La suma de los números es: " << suma << endl;
-    cout<<"El promedio de los números es: " << promedio << endl;
+    cout<<"La suma de los nÃºmeros es: " << suma << endl;
+    cout<<"El promedio de los nÃºmeros es: " << promedio << endl;
 
 
     //buscar el numero 
 
-    cout<<"Ingrese el número que desea buscar: ";
+    cout<<"Ingrese el nÃºmero que desea buscar: ";
     cin>> buscar;
 
     for (int i=0; i<10; i++){
@@ -95,10 +95,10 @@ int main() {
     }
 
     if (encontrado){
-        cout<<"el número " << buscar << " se encuentra en el arreglo." << endl;
+        cout<<"el nÃºmero " << buscar << " se encuentra en el arreglo." << endl;
     }
     else{
-        cout<<"el número " << buscar << " no se encuentra en el arreglo." << endl;
+        cout<<"el nÃºmero " << buscar << " no se encuentra en el arreglo." << endl;
     }
 
 
@@ -106,7 +106,7 @@ int main() {
 
     contador = 0;
 
-    cout<<"Ingrese el numero que desea contar: ";
+    cout<<"Ingrese el nÃºmero que desea contar: ";
     cin>> buscar;
 
     for (int i=0; i<10; i++){
@@ -115,7 +115,7 @@ int main() {
         }
     }
 
-    cout<<"El número " << buscar << " se encuentra " << contador << " veces en el arreglo." << endl;
+    cout<<"El nÃºmero " << buscar << " se encuentra " << contador << " veces en el arreglo." << endl;
 
     return 0;
 }
