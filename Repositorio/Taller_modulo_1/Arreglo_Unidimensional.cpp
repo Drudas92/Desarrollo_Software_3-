@@ -17,7 +17,7 @@ using namespace std;
 
     void IngresarArreglo(int arreglo[], int n){
         for (int i=0; i<n; i++){
-            cout<<"Ingrese el número " << i + 1 << ": ";
+            cout<<"Ingrese el nï¿½mero " << i + 1 << ": ";
             cin>> arreglo[i];
         }
     }
@@ -66,13 +66,13 @@ using namespace std;
         cout<<"promedio: " << promedio << endl;
         cout<<"mayor: " << mayor << endl;
         cout<<"menor: " << menor << endl;
-        cout<<"Cantidad de números pares: " << pares << endl;
-        cout<<"Cantidad de números impares: " << impares << endl;
-        cout<<"Posición del número mayor: " << posicionMayor + 1 << endl;
+        cout<<"Cantidad de nï¿½meros pares: " << pares << endl;
+        cout<<"Cantidad de nï¿½meros impares: " << impares << endl;
+        cout<<"Posiciï¿½n del nï¿½mero mayor: " << posicionMayor + 1 << endl;
     }
 
 
-        //funcion para buscar un número en el arreglo
+        //funcion para buscar un nï¿½mero en el arreglo
 
     void buscarNumero(int arreglo[], int n){
             
@@ -80,7 +80,7 @@ using namespace std;
         int comparaciones = 0;
         bool encontrado = false;
 
-        cout<<"Ingrese el número que desea buscar: ";
+        cout<<"Ingrese el nï¿½mero que desea buscar: ";
         cin>> buscar;
 
 
@@ -89,7 +89,7 @@ using namespace std;
 
             if (arreglo[i] == buscar){
             encontrado = true;
-            cout<<"El número " << buscar << " se encuentra en la posición " << i + 1 << endl;
+            cout<<"El nï¿½mero " << buscar << " se encuentra en la posiciï¿½n " << i + 1 << endl;
             cout<<"Cantidad de comparaciones realizadas: " << comparaciones << endl;
             break;
             }
@@ -97,14 +97,12 @@ using namespace std;
 
 
             if (encontrado == false){
-            cout<<"El número " << buscar << " no se encuentra en el arreglo." << endl;
+            cout<<"El nï¿½mero " << buscar << " no se encuentra en el arreglo." << endl;
             cout<<"Cantidad de comparaciones realizadas: " << comparaciones << endl;
             }
     }
 
-        
-
-
+    
 
 
 
@@ -115,23 +113,23 @@ int main(){
     int opcion;
 
 
-    cout<<"Ingrese la cantidad de números que desea ingresar en el arreglo: ";
+    cout<<"Ingrese la cantidad de nÃºmeros que desea ingresar en el arreglo: ";
     cin>> n;
 
     int arreglo[n];
     
 
-    cout<<"Ingrese los números del arreglo: "<<endl;
+    cout<<"Ingrese los nÃºmeros del arreglo: "<<endl;
     IngresarArreglo(arreglo, n);
 
     cout<<"Arreglo ingresado: "<<endl;
     mostrarArreglo(arreglo, n);
 
 
-    cout<<"1.Estadísticas del arreglo: "<<endl;
-    cout<<"2.Buscando un número en el arreglo: "<<endl;
+    cout<<"1.EstadÃ­sticas del arreglo: "<<endl;
+    cout<<"2.Buscando un nÃºmero en el arreglo: "<<endl;
     cout<<endl;
-    cout<<"Seleccione una opción: "<<endl;
+    cout<<"Seleccione una opciÃ³n: "<<endl;
     cin>> opcion;
 
 
@@ -142,7 +140,7 @@ int main(){
         buscarNumero(arreglo, n);
     }
     else{
-        cout<<"Opción inválida." << endl;
+        cout<<"OpciÃ³n invÃ¡lida." << endl;
     }
 
 
